@@ -1,0 +1,45 @@
+<main class="container">
+  <article class="card">
+    @if(pkmnData){
+    @defer(on timer(200ms)){
+    <h2>{{ pkmnData.name | titlecase }}</h2>
+    <span class="pokedx-num">{{ pkmnData.id}}</span>
+    <div class="img__background">
+      <img [src]="pkmnData.sprites.front_default" alt="{{pkmnData.name}}">
+    </div>
+    <div class="type">
+      @for(type of pkmnData.types; track type; ){
+      <p [class]="type.type.name">{{ type.type.name + ' ' | titlecase }}</p>
+      }
+    </div>
+    <section class="grid">
+      <div class="data">
+        <h4>Datos</h4>
+        <ul>
+          <li><b>Peso:</b> {{pkmnData.weight / 10}}kg</li>
+          <li><b>Altura:</b> {{pkmnData.height / 10}}m</li>
+        </ul>
+      </div>
+      <div class="stats">
+        <h4>Stats</h4>
+        <ul class="Stats">
+          @for(stats of pkmnData.stats; track stats; ){
+          <li><b>{{ stats.stat.name | titlecase }}:</b> {{stats.base_stat}}</li>
+          }
+        </ul>
+      </div>
+      <div class="moves">
+        <h4>Moves</h4>
+        <ul>
+          @for(moves of pkmnData.moves; track moves; ){
+          <li><b>{{ moves.move.name | titlecase }}</b></li>
+          }
+        </ul>
+      </div>
+    </section>
+    }@placeholder{
+    <p>Cargando...</p>
+    }
+    }
+  </article>
+</main>

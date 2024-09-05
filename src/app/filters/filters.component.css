@@ -1,0 +1,297 @@
+h4{
+  font-size: 30px;
+  margin:30px 20px;
+}
+.button-wrapper{
+  width: 100%;
+
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+.button {
+  padding: 9px 15px;
+  margin: 8px;
+  border: 3px none #000;
+  border-radius: 5px;
+  background-color: #ccc8c8;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button:hover{
+  box-shadow: 1px 1px 7px -2px #000;
+  transform: scale(1.01);
+}
+
+.button.btn-active{
+  border-style: none;
+  background-color: #787276;
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.button.fire {
+  min-width: 120px;
+  border-style: none;
+  border-width: 3px;
+  border-color: red;
+  border-radius: 5px;
+  background-color: #f48700;
+  opacity: 0.6;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.button.fire.btn-active {
+  border-style: none;
+  background-color: #f48700;
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.button.water {
+  min-width: 120px;
+  border: 3px none #3c9eff;
+  border-radius: 5px;
+  background-color: #009cf4;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+}
+
+.button.water.btn-active {
+  background-color: #009cf4;
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+}
+
+.button.grass {
+  min-width: 120px;
+  border: 3px none #27be36;
+  border-radius: 5px;
+  background-color: #27be36;
+  opacity: 0.6;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+}
+
+.button.grass.btn-active {
+  background-color: #27be36;
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+}
+
+.button.ground {
+  min-width: 120px;
+  background-color: #c8703f;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+}
+
+.button.ground.btn-active {
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+}
+
+.button.fighting {
+  min-width: 120px;
+  background-color: #c8473f;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+}
+
+.button.fighting.btn-active {
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+}
+
+.button.steel {
+  min-width: 120px;
+  background-color: #92acb8;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+}
+
+.button.steel.btn-active {
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+}
+
+.button.normal {
+  min-width: 120px;
+  background-color: #b8b8b8;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+}
+
+.button.normal.btn-active {
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+}
+
+.button.flying {
+  min-width: 120px;
+  background-color: #b2bbdb;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+}
+
+.button.flying.btn-active {
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+}
+
+.button.bug {
+  min-width: 120px;
+  background-color: #c6df7e;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+}
+
+.button.bug.btn-active {
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+}
+
+.button.poison {
+  min-width: 120px;
+  background-color: #bb6cc8;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+}
+
+.button.poison.btn-active {
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+}
+
+.button.electric {
+  min-width: 120px;
+  background-color: #ebe213;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+}
+
+.button.electric.btn-active {
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+}
+
+.button.psychic {
+  min-width: 120px;
+  background-color: #f36d76;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+}
+
+.button.psychic.btn-active {
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+}
+
+.button.rock {
+  min-width: 120px;
+  background-color: #c3bf95;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+}
+
+.button.rock.btn-active {
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+}
+
+.button.ghost {
+  min-width: 120px;
+  background-color: #4b5187;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+}
+
+.button.ghost.btn-active {
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+}
+
+.button.dark {
+  min-width: 120px;
+  background-color: #616163;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+}
+
+.button.dark.btn-active {
+  background-color: #616163;
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+}
+
+.button.ice {
+  min-width: 120px;
+  background-color: #a8dce8;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+}
+
+.button.ice.btn-active {
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+}
+
+.button.dragon {
+  min-width: 120px;
+  background-color: #286fc2;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+}
+
+.button.dragon.btn-active {
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+}
+
+.button.fairy {
+  min-width: 120px;
+  background-color: #f19eff;
+  opacity: 0.6;
+  color: #fff;
+  text-align: center;
+}
+
+.button.fairy.btn-active {
+  box-shadow: 1px 1px 7px -2px #000;
+  opacity: 1;
+}

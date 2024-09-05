@@ -1,0 +1,15 @@
+<div class="pannel-wrapper">
+  <app-search-bar/>
+    <app-filters/>
+      <main class="layout">
+        @if(pkmnService.getPokemones()){
+        @for(card of pkmnService.getPokemones().results; track card.name;let last = $last){
+        @defer (on viewport){
+        <app-pokemon-card [name]='card.name' [isLast]='last' (loadedEvent)='loadNextPage()' />
+          }@placeholder {
+          <p>Cargando...</p>
+          }
+        }
+      }
+      </main>
+</div>

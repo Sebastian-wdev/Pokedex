@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+  --color-fire: #f48700;
+  --color-water: #009cf4;
+  --color-grass: #27be36;
+  --color-ground: #c8703f;
+  --color-fighting: #c8473f;
+  --color-steel: #92acb8;
+  --color-normal: #b8b8b8;
+  --color-flying: #b2bbdb;
+  --color-bug: #c6df7e;
+  --color-poison: #bb6cc8;
+  --color-electric: #ebe213;
+  --color-psychic:#f36d76;
+  --color-rock: #c3bf95;
+  --color-ghost: #4b5187;
+  --color-dark: #616163;
+  --color-ice: #a8dce8;
+  --color-dragon: #286fc2;
+  --color-fairy: #f19eff;
+}
+.logo-container{
+  display: flex;
+  justify-content:center;
+}

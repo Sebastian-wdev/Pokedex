@@ -1,0 +1,16 @@
+@if (pkmn){
+  <article class="card" (click)='handleClick()'>
+    <p class="pokedx-num">{{pkmn.id}}</p>
+    <div class="img__background">
+      <img [src]="pkmn.sprites.front_default" alt="{{pkmn.name}}">
+    </div>
+    <div class="content__div">
+      <h3>{{pkmn.name | titlecase }}</h3>
+      <div class="type">
+        @for(type of pkmn.types; track type; ){
+        <span [class]='type.type.name'>{{ type.type.name + ' ' | titlecase }}</span>
+        }
+      </div>
+    </div>
+  </article>
+}

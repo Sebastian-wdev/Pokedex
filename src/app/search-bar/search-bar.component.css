@@ -1,0 +1,26 @@
+form{
+  display: flex;
+  align-items:center;
+}
+.search-bar{
+  width: 300px;
+  font-family: Ubuntu, Helvetica, sans-serif;
+  text-align: center;
+  display: block-inline;
+  height: 20px;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #333333;
+  vertical-align: middle;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+}
+.search-button{
+  display: block-inline;
+  color: white;
+  font-size:15px;
+  height: 38px;
+  background-color: #0d63e5;
+  border: 0;
+}

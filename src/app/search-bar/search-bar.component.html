@@ -1,0 +1,6 @@
+<section>
+  <form name="searchForm" [formGroup]='searchForm' (ngSubmit)="handleSubmit()">
+    <input class="search-bar" type="text" formControlName="query" name="search" placeholder="Busca un pokemon!">
+    <button class="search-button" type="submit">Buscar!</button>
+  </form>
+</section>

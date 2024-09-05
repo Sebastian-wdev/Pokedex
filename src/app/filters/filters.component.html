@@ -1,0 +1,15 @@
+<section>
+  <h4>Generación</h4>
+  <div class="button-wrapper">
+    @for(gen of genList; track gen.name){
+    <button [ngClass]="{'btn-active': activeGen[gen.name]}" (click)='handleClickGen(gen.name)' type="button" class="button">{{gen.name | titlecase}}</button>
+    }
+  </div>
+  <h4>Tipos</h4>
+  <div class="button-wrapper">
+  @for(type of typesList; track type.name){
+  <button [ngClass]="{'btn-active': activeType[type.name]}"(click)='handleClickType(type.name)' type="button" class="button {{type.name}}">{{type.name | titlecase}}</button>
+  }
+  </div>
+</section>
+
